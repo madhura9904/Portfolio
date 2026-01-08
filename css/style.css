@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* NAV */
+nav {
+  background: #111;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active,
+nav a:hover {
+  color: #00c6ff;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+/* CONTENT */
+.content {
+  padding: 60px;
+}
+
+/* Styling for the main content area */
+h2 {
+    color: #333; /* Darker color for section heading */
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Your original .card class, refined */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px; /* Adds space below the card */
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Style for the text inside the card */
+.card p {
+    margin: 0 0 10px 0; /* Add slight margin below each text line */
+    color: #555;
+}
+
+/* Style for the blue "Download Resume" button */
+.download-button {
+  display: inline-block; /* Allows padding and margin */
+  background-color: #007bff; /* A nice blue color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none; /* Removes the default underline for links */
+  margin-top: 15px; /* Adds space above the button */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* BUTTONS */
+.btn {
+  padding: 12px 25px;
+  background: #00c6ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #00c6ff;
+  color: #00c6ff;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.skills-grid span {
+  background: #eef3f7;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 3px solid #00c6ff;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 25px;
+}
+
+/* CERTS */
+.cert-list li {
+  margin-bottom: 10px;
+}
